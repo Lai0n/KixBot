@@ -1,0 +1,62 @@
+{
+  "extends": ["tslint:latest", "tslint-config-prettier", "tslint-immutable"],
+  "rules": {
+    "object-literal-sort-keys": false,
+    "interface-name": [true, "never-prefix"],
+    "no-implicit-dependencies": [true, "dev"],
+    "no-var-keyword": true,
+    "no-parameter-reassignment": true,
+    "no-console": false,
+    "ordered-imports": false,
+    "no-unbound-method": true,
+    "no-conditional-assignment": true,
+    "no-sparse-arrays": true,
+    "restrict-plus-operands": true,
+    "no-boolean-literal-compare": true,
+    "cyclomatic-complexity": true,
+    "adjacent-overload-signatures": [true, { "ignore-accessors": true }],
+    "array-type": {
+      "options": ["array"]
+    },
+    "ban-types": {
+      "options": [
+        ["Object", "Avoid using the `Object` type. Did you mean `object`?"],
+        [
+          "Function",
+          "Avoid using the `Function` type. Prefer a specific function type, like `() => void`."
+        ],
+        ["Boolean", "Avoid using the `Boolean` type. Did you mean `boolean`?"],
+        ["Number", "Avoid using the `Number` type. Did you mean `number`?"],
+        ["String", "Avoid using the `String` type. Did you mean `string`?"],
+        ["Symbol", "Avoid using the `Symbol` type. Did you mean `symbol`?"]
+      ]
+    },
+    "no-namespace": false,
+    "callable-types": true,
+    "class-name": true,
+    "max-classes-per-file": { "options": 1 },
+    "no-duplicate-super": true,
+    "no-bitwise": true,
+    "no-empty-interface": true,
+    "no-misused-new": true,
+    "no-shadowed-variable": true,
+    "no-string-throw": true,
+    "no-switch-case-fall-through": false,
+    "no-trailing-whitespace": true,
+    "no-unnecessary-initializer": true,
+    "no-unsafe-finally": true,
+    "no-unused-expression": true,
+    "no-use-before-declare": false,
+    "prefer-const": true,
+    "prefer-for-of": true,
+    "triple-equals": { "options": ["allow-null-check"] },
+    "variable-name": {
+      "options": [
+        "allow-leading-underscore",
+        "ban-keywords",
+        "check-format",
+        "allow-pascal-case"
+      ]
+    }
+  }
+}
